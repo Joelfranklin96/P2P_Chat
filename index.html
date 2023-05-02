@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>P2P Chat</h1>
+    <div id="container">
+        <div>
+            <label for="localPeerId">Your peer ID:</label>
+            <input type="text" id="localPeerId" placeholder="Enter your unique peer ID">
+        </div>
+        
+        <div>
+            <label for="targetPeerId">Target peer ID:</label>
+            <input type="text" id="targetPeerId" placeholder="Enter target peer ID">
+        </div>
+
+        <button id="connectBtn">Connect</button>
+
+        <div>
+            <label for="messages">Messages:</label>
+            <textarea id="messages" readonly></textarea>
+        </div>
+
+        <div>
+            <input type="text" id="messageInput" placeholder="Type your message here">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
